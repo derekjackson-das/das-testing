@@ -126,8 +126,7 @@ label[for="email"] {
 }
 
 .like-button {
-    display: inline-block;
-    background-color: #007BFF;
+    background-color: hsl(212, 83%, 82%);
     color: white;
     padding: 0.5em 1em;
     margin: 1em;
@@ -138,12 +137,15 @@ label[for="email"] {
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    position: fixed;
-    right: 5vw;
+    position: relative;
+    float:right;
+    width: 8em;
+    font-size:.8em;
+    text-align: center;
 }
 
 .like-button:hover {
-    background-color: #0056b3;
+    border: #0056b3 1px solid;
 }
 
 .like-button:focus-visible {
