@@ -96,6 +96,19 @@ form input {
     border-radius: 4px;
 }
 
+:focus {
+    outline: none;
+}
+
+input:focus-visible {
+    outline: 2px solid #007BFF;
+}
+
+.footer:focus {
+    outline: white 2px solid;
+    color: white
+}
+
 
 
 label[for="email"] {
