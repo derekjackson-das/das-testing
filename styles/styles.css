@@ -138,8 +138,8 @@ label[for="email"] {
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    position: absolute;
-    right: 2em;
+    position: fixed;
+    right: 5vw;
 }
 
 .like-button:hover {
