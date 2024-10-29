@@ -57,12 +57,51 @@ nav a:hover {
 }
 
 .main-content {
-    padding: 2em;
+    padding: 4em;
     background-color: white;
     margin: 2em auto;
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h6 {
+    margin: 0;
+}
+
+h6 + p {
+    color:#aaa;
+    font-size: 8px;
+}
+
+table tr:first-child {
+    /* Your styles here */
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 2em;
+}
+
+/* add styles for the form in the indeex.html file */
+form {
+    margin: 2em 0;
+    width: 50%;
+}
+/* put each input into it's own field. */
+form input {
+    display: block;
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+
+label[for="email"] {
+    display: block;
+    color: red;
+    margin-bottom: 0.5em;
 }
 
 footer {
@@ -78,4 +117,58 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Styles for the close button */
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
 }

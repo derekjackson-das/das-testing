@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Demonstrating different accessibility issues" content="DAS Demo Site">
-     <title>Demo DAS Site</title>
+     <title>Demo Site</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
-        <h1>DAS Demo Site</h1>
+        <h1>Demo Site</h1>
     </header>
     <nav>
         <a href="#">Home</a>
@@ -23,12 +23,123 @@
         <h2>Accessibility Testing</h2>
     </div>
     <div class="main-content">
-        <h2>Main Content</h2>
-        <p>This is where your main content goes.</p>
-      
+        <h2>Digital Accessibility</h2>
+        <p>
+            Digital accessibility is the practice of ensuring that websites, applications, and digital content are designed and developed to be usable by everyone, including people with disabilities. This encompasses a wide range of conditions including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities. By implementing accessible design principles, we create inclusive digital experiences that provide equal access and opportunity to all users.
+        </p>
+        
+        <h3>Key aspects of digital accessibility include:</h3>
+        <ul>
+            <li><strong>Perceivable:</strong> Information must be presentable to users in ways they can perceive</li>
+            <li><strong>Operable:</strong> User interface components and navigation must be operable</li>
+            <li><strong>Understandable:</strong> Information and user interface operation must be understandable</li>
+            <li><strong>Robust:</strong> Content must be robust enough to be interpreted by a wide variety of user agents</li>
+        </ul>
+        
+        <h3>Valuable Resources</h3>
+        <ol>
+            <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a>
+                <ul>
+                    <li>The global standard for web accessibility developed by the W3C</li>
+                    <li>Contains detailed success criteria and techniques</li>
+                </ul>
+            </li>
+            <li><a href="https://webaim.org/">WebAIM (Web Accessibility In Mind)</a>
+                <ul>
+                    <li>Comprehensive training, articles, and tools</li>
+                    <li>Features the WAVE accessibility evaluation tool</li>
+                </ul>
+            </li>
+            <li><a href="https://www.a11yproject.com/">A11Y Project</a>
+                <ul>
+                    <li>Community-driven effort to make accessibility easier</li>
+                    <li>Includes checklists, resources, and patterns</li>
+                </ul>
+            </li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">MDN Web Accessibility Guide</a>
+                <ul>
+                    <li>Mozilla's comprehensive documentation</li>
+                    <li>Practical examples and best practices</li>
+                </ul>
+            </li>
+        </ol>
+        
+     
+        <h3>Global Disability Statistics</h3>
+        <table border="1">
+           
+            <tbody>
+                <tr>
+                    <td>Region</th>
+                    <td>Estimated Population</th>
+                    <td>People with Disabilities</th>
+                    <td>Percentage of Population</th>
+                </tr>
+                <tr>
+                    <td>World</td>
+                    <td>7.8 billion</td>
+                    <td>Over 1 billion</td>
+                    <td>About 15%</td>
+                </tr>
+                <tr>
+                    <td>Europe</td>
+                    <td>746 million</td>
+                    <td>About 135 million</td>
+                    <td>Approximately 18%</td>
+                </tr>
+                <tr>
+                    <td>Americas</td>
+                    <td>1 billion</td>
+                    <td>Approximately 85 million</td>
+                    <td>Around 13%</td>
+                </tr>
+                <tr>
+                    <td>Africa</td>
+                    <td>1.3 billion</td>
+                    <td>At least 80 million</td>
+                    <td>Roughly 6%</td>
+                </tr>
+                <tr>
+                    <td>Asia & Pacific</td>
+                    <td>4.3 billion</td>
+                    <td>About 690 million</td>
+                    <td>About 16%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Please note that these figures are estimated and may vary based on the source and the specific criteria used to define and count disabilities.</p>
+
+      <!-- Create a form that is for contact information to get more information and ask for name and email. The form should work in the follwoing ways.
+       1. first name and e-mail are marked with an asterisk to identify required fields.
+       2. use placeholder text as labels.
+       3. There is a submit button after the form.
+       4. When the form is submitted a modal window will pop up and say "Thank you for your inquiry." 
+       -->
+        <h3>Contact Us</h3>
+        <form>
+            
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"><span></span>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            <!-- inlcude a field for last name      -->
+        
+            
+            <button type="submit">Submit</button>
+        </form>
+    
+        
+        <h6>Commitment to Accessibility</h6>
+        <p>
+            This project is committed to maintaining high accessibility standards. All contributions should adhere to WCAG 2.1 Level AA guidelines at minimum.
+        </p>
     </div>
+  
     <footer>
-        <p>&copy; 2023 My Website</p>
+        <p>&copy; 2024 Demo Site</p>    
+        <!-- add a link to "https://accessibility.huit.harvard.edu/"    -->
+         <a href="https://accessibility.huit.harvard.edu/">Harvard University - Digital Accessibility Services</a>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
