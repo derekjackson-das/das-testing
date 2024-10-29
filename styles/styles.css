@@ -103,7 +103,7 @@ form input {
 }
 
 div.label {
-    margin-bottom: 1em;;
+    margin-bottom: 1em;
 }
 
 :focus {
@@ -119,12 +119,36 @@ input:focus-visible {
     color: white
 }
 
-
-
 label[for="email"] {
     display: block;
     color: red;
     margin-bottom: 0.5em;
+}
+
+.like-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5em 1em;
+    margin: 1em;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    right: 2em;
+}
+
+.like-button:hover {
+    background-color: #0056b3;
+}
+
+.like-button:focus-visible {
+    outline: 2px solid #007BFF;
+    outline-offset: 5px;
 }
 
 footer {

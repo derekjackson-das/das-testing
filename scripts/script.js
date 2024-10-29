@@ -3,6 +3,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.createElement('div');
     const modalContent = document.createElement('div');
     const closeButton = document.createElement('span');
+    const likeButton = document.querySelector('.like-button');
+    const star = document.createElement('span');
+    star.innerHTML = '★';
+    star.classList.add('star');
+    
+    likeButton.addEventListener('click', function() {
+        if (likeButton.contains(star)) {
+            likeButton.removeChild(star);
+            likeButton.innerHTML = 'Like this page';
+        } else {
+            likeButton.innerHTML = '';
+            likeButton.appendChild(star);
+        }
+    });
     
     // Add classes to modal elements
     modal.classList.add('modal');
