@@ -8,10 +8,34 @@ body {
     color: #333;
 }
 
+/* Descripton */
+details {
+    padding: 10px;
+    background-color: #f29494;
+    border-left: 8px solid #007BFF;
+}
+
+details[open] {
+    background-color: #f2f2f2;
+}
+
+summary{
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    padding-left: 1em;
+}
+
+summary:focus {
+    outline: 2px solid #111112;
+    outline-offset: 9px;;
+}
+
 
 header, nav, .banner {
     max-width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
 header {
