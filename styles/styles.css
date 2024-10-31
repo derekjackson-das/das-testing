@@ -125,6 +125,10 @@ label[for="email"] {
     margin-bottom: 0.5em;
 }
 
+.old {
+    color: red;
+}
+
 .like-button {
     background-color: hsl(212, 83%, 82%);
     color: white;
@@ -163,6 +167,54 @@ footer {
     bottom: 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    width: 80%
+}
+
+.tabs:focus-within {
+    border: black 1px solid;
+}
+
+.tab-item:focus-visible {
+    outline: 2px solid #007BFF;
+    outline-offset: 3px;
+    border-radius: 5px;;
+}
+
+.tab-list {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    width:25%;
+}
+
+.tab-item.active {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.tab-content {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 
 footer p {
     margin: 0;

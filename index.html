@@ -14,10 +14,10 @@
         <h1>Demo Site</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" role="menuitem">Home</a>
+        <a href="about.html" role="menuitem">About</a>
+        <a href="services.html" role="menuitem">Services</a>
+        <a href="contact.html" role="menuitem">Contact</a>
     </nav>
     <div class="banner">
         <h2>Digital Accessibility</h2>
@@ -29,12 +29,30 @@
         </p>
         
         <div class="heading3">Key aspects of digital accessibility include:</div>
-        <ul>
-            <li><strong>Perceivable:</strong> Information must be presentable to users in ways they can perceive</li>
-            <li><strong>Operable:</strong> User interface components and navigation must be operable</li>
-            <li><strong>Understandable:</strong> Information and user interface operation must be understandable</li>
-            <li><strong>Robust:</strong> Content must be robust enough to be interpreted by a wide variety of user agents</li>
-        </ul>
+        <div class="tabs">
+            <ul class="tab-list">
+                <li class="tab-item" data-tab="tab1" tabindex="0" role="tab">Perceivable</li>
+                <li class="tab-item" data-tab="tab2" tabindex="0" role="tab">Operable</li>
+                <li class="tab-item" data-tab="tab3" tabindex="0" role="tab">Understandable</li>
+                <li class="tab-item" data-tab="tab4" tabindex="0" role="tab">Robust</li>
+            </ul>
+            <div class="tab-content" id="tab1">
+                <p><strong>Perceivable:</strong> Information must be presentable to users in ways they can perceive</p>
+            </div>
+            <div class="tab-content" id="tab2">
+                <p><strong>Operable:</strong> User interface components and navigation must be operable</p>
+            </div>
+            <div class="tab-content" id="tab3">
+                <p><strong>Understandable:</strong> Information and user interface operation must be understandable</p>
+            </div>
+            <div class="tab-content" id="tab4">
+                <p><strong>Robust:</strong> Content must be robust enough to be interpreted by a wide variety of user agents</p>
+            </div>
+        </div>
+
+        <script src="scripts/script.js"></script>
+
+    
         
         <div class="heading3">Valuable Resources</div>
         <ol>
@@ -83,8 +101,8 @@
                 </tr>
                 <tr>
                     <td>Europe</td>
-                    <td>746 million</td>
-                    <td>About 135 million</td>
+                    <td class="old">746 million</td>
+                    <td class="old">About 135 million</td>
                     <td>Approximately 18%</td>
                 </tr>
                 <tr>
@@ -108,6 +126,7 @@
             </tbody>
         </table>
         <p>Please note that these figures are estimated and may vary based on the source and the specific criteria used to define and count disabilities.</p>
+        <p> Please note that figures in <span class="old">red</span> reflect data gathered in 2010.</p>
 
       <!-- Create a form that is for contact information to get more information and ask for name and email. The form should work in the follwoing ways.
        1. first name and e-mail are marked with an asterisk to identify required fields.
