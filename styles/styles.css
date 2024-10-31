@@ -47,7 +47,7 @@ header, nav, .banner {
 header {
     background-color: #007BFF;
     color: white;
-    padding: 1.5em 0;
+    padding: .5em 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -75,7 +75,7 @@ nav a:hover {
 
 .banner {
     background-color: #e9ecef;
-    padding: 4em 0;
+    padding: 1em 0;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
@@ -87,7 +87,7 @@ nav a:hover {
 }
 
 .main-content {
-    padding: 4em;
+    padding: 2em;
     background-color: white;
     margin: 2em auto;
     max-width: 800px;
