@@ -31,6 +31,12 @@ summary:focus {
     outline-offset: 9px;;
 }
 
+details p {
+    margin: 1em 3em;
+    line-height: 1.5em;
+    max-width: 52em;
+}
+
 
 header, nav, .banner {
     max-width: 80%;
